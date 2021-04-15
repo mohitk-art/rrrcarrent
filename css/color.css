@@ -1,0 +1,36 @@
+.text-blue{
+    color: #142968 !important;
+}
+
+.text-primary{
+    color: #9A0031 !important;
+}
+
+.text-red{
+    color: #FF0000 !important;
+}
+
+.text-light-green{
+    color: #0CDF2E !important;
+}
+
+.text-golden{
+    color: #BF9507 !important;
+}
+
+.text-pink{
+    color: #CD486B !important;
+}
+
+.bg-blue{
+    background-color: #142968 !important;
+}
+
+.bg-green{
+    background-color: #1A5034 !important;
+}
+
+.bg-primary, .header_collapse{
+    background-color: #9A0031 !important;
+}
+
