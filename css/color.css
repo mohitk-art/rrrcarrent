@@ -34,3 +34,15 @@
     background-color: #9A0031 !important;
 }
 
+.btn-primary, .btn-primary:focus{
+    background-color: #9A0031 !important;
+    border-color: #9A0031 !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover{
+    background-color: #9A0031 !important;
+    border-color: #9A0031 !important;
+    color: #fff !important;
+}
+

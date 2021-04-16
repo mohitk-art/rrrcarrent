@@ -30,6 +30,8 @@ h5{
     line-height: normal;
     font-weight: 600;
     border-radius: 0;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .btn-rounded {
@@ -436,7 +438,11 @@ a.pinterest .front {
     top: 13px;
 }
 
-.color_code{
+
+.color_code {
+    display: block;
+    border: 0;
+    padding: 0;
     text-align: center;
 }
 
