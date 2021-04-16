@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="./css/color.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <style>
+
+        .vip_card h5 {
+            font-size: 18px;
+        }
+
+        .car_title{
+            font-size: 22px;
+        }
+
+        .price_div h3 {
+            font-size: 36px;
+        }
+
+        .price_div span {
+            font-size: 16px;
+            top: 8px;
+        }
+    </style>
+
+    <title>Car Rental</title>
+  </head>
+  <body>
+    
+    <header class="main_header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white flex-wrap px-0">
+           
+            <div class="container header_top px-3">
+                <a class="navbar-brand" href="/">
+                    <img src="./img/logot.png" class="desk_logo" />
+                    <img src="./img/logo.png" class="mobile_logo" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="header_mid">
+                <div class="crash_div">
+                    <h6 class="text-blue">Crash Avoidance Technology <br/> Available in our all FLEET</h6>
+                    <img src="./img/headerimg.png" />
+                </div>
+
+
+                <div class="header_contact">
+                    <i class="fa fa-phone-alt mr-2"></i> 01225 852 888 <br/>
+                    <i class="fa fa-envelope mr-2"></i> info@rrrsuv.com
+                </div>
+                </div>
+            </div>
+            
+            <div class="collapse navbar-collapse header_collapse" id="navbarNav">
+            <div class="container px-3">
+              <ul class="navbar-nav align-items-center w-100">
+                <li class="nav-item mr-auto logob_img_li">
+                    <img src="./img/logob.png" class="logob_img" />
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Locations</a>
+                </li>
+                
+              </ul>
+              </div>
+            </div>
+
+          
+          </nav>
+    </header>
+
+    <section class="header_bottom mb-3">
+        <div class="container">
+        <img src="./img/cmon.png" class="cmonimg mb-3" />
+
+        <div class="brands mb-3">
+            <span class="bg-primary">
+                Exact <br/> Brand
+            </span>
+
+            <i class="fa fa-arrow-circle-right"></i>
+
+            <span class="bg-green">
+                Exact <br/> Model
+            </span>
+
+            <i class="fa fa-arrow-circle-right"></i>
+
+            <span class="bg-blue">
+                Exact <br/> Color
+            </span>
+        </div>
+
+        <div class="you_choise mb-3">
+            Your Choice
+            <i class="far fa-hand-point-right"></i>
+            <span class="text-light-green">U-Drive</span>
+            <i class="far fa-hand-point-right"></i>
+            <span class="text-primary">No Game</span>
+            <i class="far fa-hand-point-right"></i>
+            <span class="text-pink">No Gimmick</span>
+        </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+              
+                <section class="car_list_section mb-3">
+            
+                        <div class="form-row align-items-center">
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <h3 class="text-primary car_title">Land Range Rover</h3>
+                                <div class="price_div">
+                                    <h3>$ 99</h3>
+                                    <span>/day</span>
+                                </div>
+            
+                                <!-- <button class="btn btn-outline-dark btn-rounded"  data-toggle="modal" data-target="#reserveModal">
+                                    <i class="fa fa-calendar-alt mr-2"></i>
+                                    Reserve Now
+                                </button> -->
+            
+                                <button class="btn btn-outline-dark btn-rounded">
+                                    <i class="fa fa-calendar-alt mr-2"></i>
+                                    Reserve Now
+                                </button>
+
+                                <div class="feature_box text-center mt-3">
+                                    <h6 class="text-red mb-2">Premium Features at $0</h6>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <img src="./img/bluwtooth.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> Bluetooth</h6>
+                                        </div>
+        
+                                        <div class="col">
+                                            <img src="./img/wifi.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> Wifi</h6>
+                                        </div>
+        
+                                        <div class="col">
+                                            <img src="./img/gps.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> GPS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- <div class="col-md-6 col-lg-3 mb-3">
+                                 <div class="features_div text-center">
+                                    <h5 class="text-red">Premium Features at $0</h5>
+                                    <h5 class="text-blue"><img src="./img/bluwtooth.png" class="feature_img" />Free Bluetooth</h5>
+                                    <h5 class="text-blue"><img src="./img/wifi.png" class="feature_img" />Free Wifi</h5>
+                                    <h5 class="text-blue"><img src="./img/gps.png" class="feature_img" />Free GPS</h5>   
+                                </div>
+                            </div> -->
+            
+                            <div class="col-md-6 col-lg-4 mb-3">
+                            
+                                  <div class="tab-content" id="nav-tabContentCar">
+                                    <div class="tab-pane fade show active" id="nav-carcolor1" role="tabpanel" aria-labelledby="nav-carcolor1-tab">
+                                        <img src="./img/landRangeRover.png" class="w-100 mb-3" />
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-carcolor2" role="tabpanel" aria-labelledby="nav-carcolor2-tab">
+                                        <img src="./img/landRangeRover.png" class="w-100 mb-3" />
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-carcolor3" role="tabpanel" aria-labelledby="nav-carcolor3-tab">
+                                        <img src="./img/landRangeRover.png" class="w-100 mb-3" />
+                                    </div>
+            
+                                    <div class="tab-pane fade" id="nav-carcolor4" role="tabpanel" aria-labelledby="nav-carcolor4-tab">
+                                        <img src="./img/landRangeRover.png" class="w-100 mb-3" />
+                                    </div>
+                                  </div>
+                              
+                                    <div class="nav nav-tabs color_code" id="nav-tab" role="tablist">
+                                        <img src="./img/colorcode1.png" id="nav-carcolor1-tab" data-toggle="tab" href="#nav-carcolor1" role="tab" aria-controls="nav-carcolor1" aria-selected="true" class="active" />
+                                        <img src="./img/colorcode2.png" id="nav-carcolor2-tab" data-toggle="tab" href="#nav-carcolor2" role="tab" aria-controls="nav-carcolor2" aria-selected="false" />
+                                        <img src="./img/colorcode3.png" id="nav-carcolor3-tab" data-toggle="tab" href="#nav-carcolor3" role="tab" aria-controls="nav-carcolor3" aria-selected="false" />
+                                        <img src="./img/colorcode4.png" id="nav-carcolor4-tab" data-toggle="tab" href="#nav-carcolor4" role="tab" aria-controls="nav-carcolor4" aria-selected="false" />
+                                    </div>
+                                  
+                                <!-- <div class="color_code">
+                                    <label>
+                                        <input type="radio" value="c1" name="color1" />
+                                        <img src="./img/colorcode1.png" />
+                                    </label>
+            
+                                    <label>
+                                        <input type="radio" value="c2" name="color1" />
+                                        <img src="./img/colorcode2.png" />
+                                    </label>
+            
+                                    <label>
+                                        <input type="radio" value="c3" name="color1" />
+                                        <img src="./img/colorcode3.png" />
+                                    </label>
+            
+                                    <label>
+                                        <input type="radio" value="c4" name="color1" />
+                                        <img src="./img/colorcode4.png" />
+                                    </label>
+                                    
+                                </div> -->
+                            </div>
+            
+                            <div class="col-md-12 col-lg-4 mb-3">
+                                <div class="car_specification_box">
+                                    <!-- <div class="feature_box text-center">
+                                        <h6 class="text-red mb-3">Premium Features at $0</h6>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <img src="./img/bluwtooth.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free Bluetooth</h6>
+                                            </div>
+            
+                                            <div class="col">
+                                                <img src="./img/wifi.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free Wifi</h6>
+                                            </div>
+            
+                                            <div class="col">
+                                                <img src="./img/gps.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free GPS</h6>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/door.png" class="mr-2" />
+                                        Doors
+                                        </span>
+            
+                                        <span class="text-primary">4</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/passanger.png" class="mr-2" />
+                                        Passangers
+                                        </span>
+            
+                                        <span class="text-primary">5</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/luggage.png" class="mr-2" />
+                                        Luggage
+                                        </span>
+            
+                                        <span class="text-primary">2 Bags</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/transmission.png" class="mr-2" />
+                                        Transmission
+                                        </span>
+            
+                                        <span class="text-primary">Automatic</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/air-conditioning.png" class="mr-2" />
+                                        Air Conditioning
+                                        </span>
+            
+                                        <span class="text-primary">Dual Zone</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                </section>
+            
+                <section class="car_list_section mb-3">
+                
+                        <div class="form-row align-items-center">
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <h3 class="text-primary car_title">Range Rover Sport</h3>
+                                <div class="price_div">
+                                    <h3>$ 99</h3>
+                                    <span>/day</span>
+                                </div>
+            
+                                <button class="btn btn-outline-dark btn-rounded">
+                                    <i class="fa fa-calendar-alt mr-2"></i>
+                                    Reserve Now
+                                </button>
+
+                                <div class="feature_box text-center mt-3">
+                                    <h6 class="text-red mb-2">Premium Features at $0</h6>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <img src="./img/bluwtooth.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> Bluetooth</h6>
+                                        </div>
+        
+                                        <div class="col">
+                                            <img src="./img/wifi.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> Wifi</h6>
+                                        </div>
+        
+                                        <div class="col">
+                                            <img src="./img/gps.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> GPS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+            
+                            <div class="col-md-6 col-lg-4 mb-3">
+                               
+                                <div class="tab-content" id="nav-tabContentCar2">
+                                    <div class="tab-pane fade show active" id="nav2-carcolor1" role="tabpanel" aria-labelledby="nav2-carcolor1-tab">
+                                        <img src="./img/rangeRoverSport.jpg" class="w-100 mb-3" />
+                                    </div>
+                                    <div class="tab-pane fade" id="nav2-carcolor2" role="tabpanel" aria-labelledby="nav2-carcolor2-tab">
+                                        <img src="./img/rangeRoverSport.jpg" class="w-100 mb-3" />
+                                    </div>
+                                    <div class="tab-pane fade" id="nav2-carcolor3" role="tabpanel" aria-labelledby="nav2-carcolor3-tab">
+                                        <img src="./img/rangeRoverSport.jpg" class="w-100 mb-3" />
+                                    </div>
+            
+                                    <div class="tab-pane fade" id="nav2-carcolor4" role="tabpanel" aria-labelledby="nav2-carcolor4-tab">
+                                        <img src="./img/rangeRoverSport.jpg" class="w-100 mb-3" />
+                                    </div>
+                                  </div>
+                              
+                                    <div class="nav nav-tabs color_code" id="nav-tab2" role="tablist">
+                                        <img src="./img/colorcode1.png" id="nav2-carcolor1-tab" data-toggle="tab" href="#nav2-carcolor1" role="tab" aria-controls="nav2-carcolor1" aria-selected="true" class="active" />
+                                        <img src="./img/colorcode2.png" id="nav2-carcolor2-tab" data-toggle="tab" href="#nav2-carcolor2" role="tab" aria-controls="nav2-carcolor2" aria-selected="false" />
+                                        <img src="./img/colorcode3.png" id="nav2-carcolor3-tab" data-toggle="tab" href="#nav2-carcolor3" role="tab" aria-controls="nav2-carcolor3" aria-selected="false" />
+                                        <img src="./img/colorcode4.png" id="nav2-carcolor4-tab" data-toggle="tab" href="#nav2-carcolor4" role="tab" aria-controls="nav2-carcolor4" aria-selected="false" />
+                                    </div>
+                            </div>
+            
+                            <div class="col-md-12 col-lg-4 mb-3">
+                                <div class="car_specification_box">
+                                    <!-- <div class="feature_box text-center">
+                                        <h6 class="text-red mb-3">Premium Features at $0</h6>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <img src="./img/bluwtooth.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free Bluetooth</h6>
+                                            </div>
+            
+                                            <div class="col">
+                                                <img src="./img/wifi.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free Wifi</h6>
+                                            </div>
+            
+                                            <div class="col">
+                                                <img src="./img/gps.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free GPS</h6>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/door.png" class="mr-2" />
+                                        Doors
+                                        </span>
+            
+                                        <span class="text-primary">4</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/passanger.png" class="mr-2" />
+                                        Passangers
+                                        </span>
+            
+                                        <span class="text-primary">5</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/luggage.png" class="mr-2" />
+                                        Luggage
+                                        </span>
+            
+                                        <span class="text-primary">2 Bags</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/transmission.png" class="mr-2" />
+                                        Transmission
+                                        </span>
+            
+                                        <span class="text-primary">Automatic</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/air-conditioning.png" class="mr-2" />
+                                        Air Conditioning
+                                        </span>
+            
+                                        <span class="text-primary">Dual Zone</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                </section>
+            
+                <section class="car_list_section mb-3">
+                  
+                        <div class="form-row align-items-center">
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <h3 class="text-primary car_title">Range Rover Velar</h3>
+                                <div class="price_div">
+                                    <h3>$ 99</h3>
+                                    <span>/day</span>
+                                </div>
+            
+                                <button class="btn btn-outline-dark btn-rounded">
+                                    <i class="fa fa-calendar-alt mr-2"></i>
+                                    Reserve Now
+                                </button>
+
+                                <div class="feature_box text-center mt-3">
+                                    <h6 class="text-red mb-2">Premium Features at $0</h6>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <img src="./img/bluwtooth.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> Bluetooth</h6>
+                                        </div>
+        
+                                        <div class="col">
+                                            <img src="./img/wifi.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> Wifi</h6>
+                                        </div>
+        
+                                        <div class="col">
+                                            <img src="./img/gps.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> GPS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                            <div class="col-md-6 col-lg-4 mb-3">
+            
+                                <div class="tab-content" id="nav-tabContentCar3">
+                                    <div class="tab-pane fade show active" id="nav3-carcolor1" role="tabpanel" aria-labelledby="nav3-carcolor1-tab">
+                                        <img src="./img/rangeRoverVeller.jpg" class="w-100 mb-3" />
+                                    </div>
+                                    <div class="tab-pane fade" id="nav3-carcolor2" role="tabpanel" aria-labelledby="nav3-carcolor2-tab">
+                                        <img src="./img/rangeRoverVeller.jpg" class="w-100 mb-3" />
+                                    </div>
+                                    <div class="tab-pane fade" id="nav3-carcolor3" role="tabpanel" aria-labelledby="nav3-carcolor3-tab">
+                                        <img src="./img/rangeRoverVeller.jpg" class="w-100 mb-3" />
+                                    </div>
+            
+                                    <div class="tab-pane fade" id="nav3-carcolor4" role="tabpanel" aria-labelledby="nav3-carcolor4-tab">
+                                        <img src="./img/rangeRoverVeller.jpg" class="w-100 mb-3" />
+                                    </div>
+                                  </div>
+                              
+                                    <div class="nav nav-tabs color_code" id="nav-tab3" role="tablist">
+                                        <img src="./img/colorcode1.png" id="nav3-carcolor1-tab" data-toggle="tab" href="#nav3-carcolor1" role="tab" aria-controls="nav3-carcolor1" aria-selected="true" class="active" />
+                                        <img src="./img/colorcode2.png" id="nav3-carcolor2-tab" data-toggle="tab" href="#nav3-carcolor2" role="tab" aria-controls="nav3-carcolor2" aria-selected="false" />
+                                        <img src="./img/colorcode3.png" id="nav3-carcolor3-tab" data-toggle="tab" href="#nav3-carcolor3" role="tab" aria-controls="nav3-carcolor3" aria-selected="false" />
+                                        <img src="./img/colorcode4.png" id="nav3-carcolor4-tab" data-toggle="tab" href="#nav3-carcolor4" role="tab" aria-controls="nav3-carcolor4" aria-selected="false" />
+                                    </div>
+                            </div>
+            
+                            <div class="col-md-12 col-lg-4 mb-3">
+                                <div class="car_specification_box">
+                                    <!-- <div class="feature_box text-center">
+                                        <h6 class="text-red mb-3">Premium Features at $0</h6>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <img src="./img/bluwtooth.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free Bluetooth</h6>
+                                            </div>
+            
+                                            <div class="col">
+                                                <img src="./img/wifi.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free Wifi</h6>
+                                            </div>
+            
+                                            <div class="col">
+                                                <img src="./img/gps.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free GPS</h6>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/door.png" class="mr-2" />
+                                        Doors
+                                        </span>
+            
+                                        <span class="text-primary">4</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/passanger.png" class="mr-2" />
+                                        Passangers
+                                        </span>
+            
+                                        <span class="text-primary">5</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/luggage.png" class="mr-2" />
+                                        Luggage
+                                        </span>
+            
+                                        <span class="text-primary">2 Bags</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/transmission.png" class="mr-2" />
+                                        Transmission
+                                        </span>
+            
+                                        <span class="text-primary">Automatic</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/air-conditioning.png" class="mr-2" />
+                                        Air Conditioning
+                                        </span>
+            
+                                        <span class="text-primary">Dual Zone</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  
+                </section>
+
+                <section class="car_list_section mb-3">
+                   
+                        <div class="form-row align-items-center">
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <h3 class="text-primary car_title">Range Rover Evoque</h3>
+                                <div class="price_div">
+                                    <h3>$ 99</h3>
+                                    <span>/day</span>
+                                </div>
+            
+                                <button class="btn btn-outline-dark btn-rounded">
+                                    <i class="fa fa-calendar-alt mr-2"></i>
+                                    Reserve Now
+                                </button>
+
+                                <div class="feature_box text-center mt-3">
+                                    <h6 class="text-red mb-2">Premium Features at $0</h6>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <img src="./img/bluwtooth.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> Bluetooth</h6>
+                                        </div>
+        
+                                        <div class="col">
+                                            <img src="./img/wifi.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> Wifi</h6>
+                                        </div>
+        
+                                        <div class="col">
+                                            <img src="./img/gps.png" class="feature_icon" />
+                                            <h6 class="text-blue">Free <br/> GPS</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                
+                                <div class="tab-content" id="nav-tabContentCar4">
+                                    <div class="tab-pane fade show active" id="nav4-carcolor1" role="tabpanel" aria-labelledby="nav4-carcolor1-tab">
+                                        <img src="./img/rangeRoverEvoque.jpg" class="w-100 mb-3" />
+                                    </div>
+                                    <div class="tab-pane fade" id="nav4-carcolor2" role="tabpanel" aria-labelledby="nav4-carcolor2-tab">
+                                        <img src="./img/rangeRoverEvoque.jpg" class="w-100 mb-3" />
+                                    </div>
+                                    <div class="tab-pane fade" id="nav4-carcolor3" role="tabpanel" aria-labelledby="nav4-carcolor3-tab">
+                                        <img src="./img/rangeRoverEvoque.jpg" class="w-100 mb-3" />
+                                    </div>
+            
+                                    <div class="tab-pane fade" id="nav4-carcolor4" role="tabpanel" aria-labelledby="nav4-carcolor4-tab">
+                                        <img src="./img/rangeRoverEvoque.jpg" class="w-100 mb-3" />
+                                    </div>
+                                  </div>
+                              
+                                    <div class="nav nav-tabs color_code" id="nav-tab4" role="tablist">
+                                        <img src="./img/colorcode1.png" id="nav4-carcolor1-tab" data-toggle="tab" href="#nav4-carcolor1" role="tab" aria-controls="nav4-carcolor1" aria-selected="true" class="active" />
+                                        <img src="./img/colorcode2.png" id="nav4-carcolor2-tab" data-toggle="tab" href="#nav4-carcolor2" role="tab" aria-controls="nav4-carcolor2" aria-selected="false" />
+                                        <img src="./img/colorcode3.png" id="nav4-carcolor3-tab" data-toggle="tab" href="#nav4-carcolor3" role="tab" aria-controls="nav4-carcolor3" aria-selected="false" />
+                                        <img src="./img/colorcode4.png" id="nav4-carcolor4-tab" data-toggle="tab" href="#nav4-carcolor4" role="tab" aria-controls="nav4-carcolor4" aria-selected="false" />
+                                    </div>
+                            </div>
+            
+                            <div class="col-md-12 col-lg-4 mb-3">
+                                <div class="car_specification_box">
+                                    <!-- <div class="feature_box text-center">
+                                        <h6 class="text-red mb-3">Premium Features at $0</h6>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <img src="./img/bluwtooth.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free Bluetooth</h6>
+                                            </div>
+            
+                                            <div class="col">
+                                                <img src="./img/wifi.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free Wifi</h6>
+                                            </div>
+            
+                                            <div class="col">
+                                                <img src="./img/gps.png" class="feature_icon" />
+                                                <h6 class="text-blue">Free GPS</h6>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/door.png" class="mr-2" />
+                                        Doors
+                                        </span>
+            
+                                        <span class="text-primary">4</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/passanger.png" class="mr-2" />
+                                        Passangers
+                                        </span>
+            
+                                        <span class="text-primary">5</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/luggage.png" class="mr-2" />
+                                        Luggage
+                                        </span>
+            
+                                        <span class="text-primary">2 Bags</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/transmission.png" class="mr-2" />
+                                        Transmission
+                                        </span>
+            
+                                        <span class="text-primary">Automatic</span>
+                                    </div>
+            
+                                    <div class="item">
+                                        <span>
+                                        <img src="./img/air-conditioning.png" class="mr-2" />
+                                        Air Conditioning
+                                        </span>
+            
+                                        <span class="text-primary">Dual Zone</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </section>
+            </div>
+
+            <div class="col-md-3">
+                <div class="vip_card text-center mb-3">
+                    <h5 class="text-golden">Become VIP Loyality Member</h5>
+                    <img src="./img/rrrcard.png" />
+                </div>
+
+                <div class="mobile_div">
+                    <h6 class="text-blue">Automation <br/> Rental</h6>
+                    <img src="./img/phone.jpg"/>
+                    <h6 class="text-blue">Automated <br/> Pick-up Points</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+
+    <footer class="main_footer">
+        <div class="container d-flex align-items-center flex-wrap">
+            <ul class="social-nav model-3d-0 footer-social w3_agile_social">
+                <li><a href="#" class="facebook">
+                      <div class="front"><i class="fab fa-facebook-f" aria-hidden="true"></i></div>
+                      <div class="back"><i class="fab fa-facebook-f" aria-hidden="true"></i></div></a></li>
+                <li><a href="#" class="twitter">
+                      <div class="front"><i class="fab fa-twitter" aria-hidden="true"></i></div>
+                      <div class="back"><i class="fab fa-twitter" aria-hidden="true"></i></div></a></li>
+                <li><a href="#" class="instagram">
+                      <div class="front"><i class="fab fa-instagram" aria-hidden="true"></i></div>
+                      <div class="back"><i class="fab fa-instagram" aria-hidden="true"></i></div></a></li>
+                <li><a href="#" class="pinterest">
+                      <div class="front"><i class="fab fa-google-plus-g" aria-hidden="true"></i></div>
+                      <div class="back"><i class="fab fa-google-plus-g" aria-hidden="true"></i></div></a></li>
+            </ul>
+
+            <span class="copyright_text">Copyright © 2021  RRR SUV Rental Luxury SUV 4 all. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="reserveModal" tabindex="-1">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Reserve Now</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-row">
+              <div class="col-md-"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
