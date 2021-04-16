@@ -24,6 +24,21 @@ h5{
 }
 
 
+.btn {
+    font-size: 14px;
+    padding: 12px 20px;
+    line-height: normal;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.btn-rounded {
+    border-radius: 44px !important;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
 /* Header start */
 .main_header .desk_logo{
     width: 100%;
@@ -387,3 +402,137 @@ a.pinterest .front {
 
 
 /* Footer End */
+
+
+
+/* Step 2 Page Start */
+/* ########################################### */
+
+.car_title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: normal;
+}
+
+.price_div{
+    display: flex;
+}
+
+.price_div h3{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.price_div span{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    padding-left: 10px;
+    top: 13px;
+}
+
+.color_code{
+    text-align: center;
+}
+
+.color_code label{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.color_code label input{
+    display: none;
+}
+
+.color_code label input:checked ~ img, .color_code img.active {
+    border: 2px solid #9a0031;
+    box-shadow: 0 0 9px #00000078;
+}
+
+.color_code img {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    object-position: center center;
+}
+
+.car_list_section {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+.car_specification_box {
+    background-color: #F7F7F7;
+    border-color: #D3D3D3;
+    padding: 15px;
+}
+
+.car_specification_box .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.car_specification_box .item > span{
+    display: flex;
+    align-items: center;
+}
+
+.car_specification_box .item > span.text-primary{
+    font-weight: 600;
+}
+
+.car_specification_box .item > span > img{
+    width: 16px;
+}
+
+
+.feature_box h6{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.feature_icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.mobile_div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mobile_div > h6{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.mobile_div > img{
+    width: 190px;
+}
+
+
+@media(max-width:500px){
+    .mobile_div > *{
+        width: 100%;
+    }
+}
+/* Step 2 Page End */
+/* ############################################## */
