@@ -413,7 +413,7 @@ a.pinterest .front {
 
 .car_title{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 24px;
     line-height: normal;
 }
 
@@ -456,8 +456,8 @@ a.pinterest .front {
 }
 
 .color_code img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin: 3px;
     display: inline-block;
     object-fit: cover;
@@ -482,7 +482,7 @@ a.pinterest .front {
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 0;
     border-bottom: 1px solid #DDDDDD;
 }
