@@ -8,6 +8,11 @@ body{
 }
 
 
+.modal-md {
+    max-width: 700px;
+}
+
+
 h3{
     font-size: 44px;
     font-weight: 600;
@@ -418,7 +423,6 @@ a.pinterest .front {
     font-size: 24px;
     line-height: normal;
 }
-
 .price_div{
     display: flex;
 }
@@ -456,12 +460,13 @@ a.pinterest .front {
     display: none;
 }
 
-.color_code label input:checked ~ img, .color_code img.active {
+.color_code label input:checked ~ img, .color_code img.active, .color_tab.active {
     border: 2px solid #9a0031;
     box-shadow: 0 0 9px #00000078;
 }
 
-.color_code img {
+
+.color_code img , .color_tab{
     width: 25px;
     height: 25px;
     margin: 3px;
@@ -545,3 +550,12 @@ a.pinterest .front {
 }
 /* Step 2 Page End */
 /* ############################################## */
+
+
+
+/* Reserve Modal Start */
+.form-row  > * > label{
+    font-weight: 500;
+}
+
+/* Reseve Modal End */

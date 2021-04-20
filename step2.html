@@ -117,15 +117,15 @@
                         <span>/day</span>
                     </div>
 
-                    <!-- <button class="btn btn-outline-dark btn-rounded"  data-toggle="modal" data-target="#reserveModal">
-                        <i class="fa fa-calendar-alt mr-2"></i>
-                        Reserve Now
-                    </button> -->
-
-                    <button class="btn btn-outline-dark btn-rounded">
+                    <button class="btn btn-outline-dark btn-rounded"  data-toggle="modal" data-target="#reserveModal">
                         <i class="fa fa-calendar-alt mr-2"></i>
                         Reserve Now
                     </button>
+
+                    <!-- <button class="btn btn-outline-dark btn-rounded">
+                        <i class="fa fa-calendar-alt mr-2"></i>
+                        Reserve Now
+                    </button> -->
                 </div>
 
                 <div class="col-md-6 col-lg-3 mb-3">
@@ -156,10 +156,11 @@
                       </div>
                   
                         <div class="nav nav-tabs color_code" id="nav-tab" role="tablist">
-                            <img src="./img/colorcode1.png" id="nav-carcolor1-tab" data-toggle="tab" href="#nav-carcolor1" role="tab" aria-controls="nav-carcolor1" aria-selected="true" class="active" />
-                            <img src="./img/colorcode2.png" id="nav-carcolor2-tab" data-toggle="tab" href="#nav-carcolor2" role="tab" aria-controls="nav-carcolor2" aria-selected="false" />
-                            <img src="./img/colorcode3.png" id="nav-carcolor3-tab" data-toggle="tab" href="#nav-carcolor3" role="tab" aria-controls="nav-carcolor3" aria-selected="false" />
-                            <img src="./img/colorcode4.png" id="nav-carcolor4-tab" data-toggle="tab" href="#nav-carcolor4" role="tab" aria-controls="nav-carcolor4" aria-selected="false" />
+                            <!-- <img src="./img/colorcode1.png" id="nav-carcolor1-tab" data-toggle="tab" href="#nav-carcolor1" role="tab" aria-controls="nav-carcolor1" aria-selected="true" class="active" /> -->
+                            <div id="nav-carcolor1-tab" data-toggle="tab" href="#nav-carcolor1" role="tab" aria-controls="nav-carcolor1" aria-selected="true" style="background-color: #0a0e11;" class="active color_tab"></div>
+                            <div id="nav-carcolor2-tab" data-toggle="tab" href="#nav-carcolor2" role="tab" aria-controls="nav-carcolor2" aria-selected="false" style="background-color: #ededef;" class="color_tab"></div>
+                            <div id="nav-carcolor3-tab" data-toggle="tab" href="#nav-carcolor3" role="tab" aria-controls="nav-carcolor3" aria-selected="false" style="background-color: #161b21;" class="color_tab"></div>
+                            <div id="nav-carcolor4-tab" data-toggle="tab" href="#nav-carcolor4" role="tab" aria-controls="nav-carcolor4" aria-selected="false" style="background-color: #0f0b0a;" class="color_tab"></div>
                         </div>
                       
                     <!-- <div class="color_code">
@@ -267,10 +268,14 @@
                         <span>/day</span>
                     </div>
 
-                    <button class="btn btn-outline-dark btn-rounded">
+                    <button class="btn btn-outline-dark btn-rounded"  data-toggle="modal" data-target="#reserveModal">
                         <i class="fa fa-calendar-alt mr-2"></i>
                         Reserve Now
                     </button>
+                    <!-- <button class="btn btn-outline-dark btn-rounded">
+                        <i class="fa fa-calendar-alt mr-2"></i>
+                        Reserve Now
+                    </button> -->
                 </div>
 
                 <div class="col-md-6 col-lg-3 mb-3">
@@ -389,10 +394,15 @@
                         <span>/day</span>
                     </div>
 
-                    <button class="btn btn-outline-dark btn-rounded">
+                    <button class="btn btn-outline-dark btn-rounded"  data-toggle="modal" data-target="#reserveModal">
                         <i class="fa fa-calendar-alt mr-2"></i>
                         Reserve Now
                     </button>
+
+                    <!-- <button class="btn btn-outline-dark btn-rounded">
+                        <i class="fa fa-calendar-alt mr-2"></i>
+                        Reserve Now
+                    </button> -->
                 </div>
 
                 <div class="col-md-6 col-lg-3 mb-3">
@@ -511,10 +521,15 @@
                         <span>/day</span>
                     </div>
 
-                    <button class="btn btn-outline-dark btn-rounded">
+                    <button class="btn btn-outline-dark btn-rounded"  data-toggle="modal" data-target="#reserveModal">
                         <i class="fa fa-calendar-alt mr-2"></i>
                         Reserve Now
                     </button>
+
+                    <!-- <button class="btn btn-outline-dark btn-rounded">
+                        <i class="fa fa-calendar-alt mr-2"></i>
+                        Reserve Now
+                    </button> -->
                 </div>
 
                 <div class="col-md-6 col-lg-3 mb-3">
@@ -685,12 +700,82 @@
         </div>
         <div class="modal-body">
           <div class="form-row">
-              <div class="col-md-"></div>
+              <div class="col-md-6 mb-3">
+                  <label>Pick Up Location <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>Pick Up Date <span class="text-danger">*</span></label>
+                <input type="datetime-local" placeholder="Choose Date" class="form-control" />
+            </div>
+
+
+                <div class="col-md-6 mb-3">
+                    <label>Drop Off Location <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                <label>Drop Off Date <span class="text-danger">*</span></label>
+                <input type="datetime-local" placeholder="Choose Date" class="form-control" />
+                </div>
+
+            <div class="col-md-12 p-3 mt-3 rounded border">
+                <h5>Personal Information <span class="text-danger">*</span></h5>
+
+                <div class="form-row">
+                    <div class="col-md-5 mb-3">
+                        <label>First Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                        <label>Last Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="col-md-2 mb-3">
+                        <label>Age <span class="text-danger">*</span></label>
+                        <input type="number" max="150" class="form-control" />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label>Phone Number <span class="text-danger">*</span></label>
+                        <input type="number" max="9999999999" class="form-control" />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label>Email Address <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" />
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label>Address <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label>City <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label>Country <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label>Zip Code <span class="text-danger">*</span></label>
+                        <input type="number" class="form-control" />
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Reserve</button>
         </div>
       </div>
     </div>
