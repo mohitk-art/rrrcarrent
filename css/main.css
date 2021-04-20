@@ -100,6 +100,11 @@ h5{
 }
 
 
+.user_dropdown .dropdown-menu{
+    left: initial;
+    right: 0;
+}
+
 @media(min-width:992px){
     .mobile_logo{
         display: none;
@@ -554,8 +559,165 @@ a.pinterest .front {
 
 
 /* Reserve Modal Start */
-.form-row  > * > label{
+.form-row  > * > label, .label{
     font-weight: 500;
 }
 
 /* Reseve Modal End */
+
+
+/* Login Page Start */
+.loginWrapper {
+    margin: auto;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+a.loginLink {
+    font-weight: 500;
+    color: #9a0031;
+}
+
+.inputControl{
+    position: relative;
+}
+
+.inputControl i{
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.inputControl input{
+    padding-right: 25px;
+}
+
+
+.signupTitle {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.signupScreenWrapper{
+    max-width: 900px;
+    margin: auto;
+}
+
+.signupScreenWrapper .form-control, .loginWrapper .form-control{
+    border: 0;
+    border-radius: 0;
+    line-height: normal;
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+    padding-left: 0;
+    outline: none;
+    box-shadow: none;
+}
+/* Login Page End */
+
+
+/* Dashboard Page Start */
+.main_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_wrapper .main_sidebar{
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 22%);
+    color: #fff;
+    height: 100%;
+    position: relative;
+}
+
+.main_wrapper .main_panel{
+    width: 100%;
+}
+
+.sidebarLink{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    font-size: 13.5px;
+    color:#333;
+    border-bottom: 1px solid #e3e8ea;
+    padding: 12px 20px;
+    padding-right: 25px;
+    background: #ffffff;
+    text-decoration:none !important;
+    position: relative;
+}
+
+.sidebarLink.active {
+    background-color: #9a0031;
+    color: #fff;
+}
+
+.sidebarLink:hover {
+    color:#9a0031;
+}
+
+.sidebarLink::after{
+    position: absolute;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.sidebarLink i{
+    margin-right: 10px;
+}
+
+.edit-profile-input {
+    position: relative;
+    display: inline-block;
+}
+
+
+.edit-profile-input img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.edit-profile-input i{
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    font-size: 21px;
+    color: #9a0031;
+}
+
+.edit-profile-input input{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+    top: 0;
+}
+
+@media(min-width:767px){
+    .main_wrapper .main_sidebar{
+        max-width: 300px;
+    }
+    
+    .main_wrapper .main_panel{
+        max-width: calc(100% - 300px);
+        padding: 20px;
+    }
+}
+
+
+/* Dashboard Page End */
