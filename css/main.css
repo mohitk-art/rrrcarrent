@@ -468,17 +468,17 @@ a.pinterest .front {
 
 .color_code label input:checked ~ img, .color_code img.active, .color_tab.active {
     border: 2px solid #9a0031;
-    box-shadow: 0 0 9px #00000078;
 }
 
 
-.color_code img , .color_tab{
+.color_code img, .color_tab{
     width: 25px;
     height: 25px;
     margin: 3px;
     display: inline-block;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0 0 9px #00000078;
     cursor: pointer;
     object-position: center center;
 }
