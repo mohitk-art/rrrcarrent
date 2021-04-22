@@ -7,6 +7,14 @@ body{
     max-width: 1300px;
 }
 
+.form-control {
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: normal;
+    height: auto;
+    padding: 9px 15px;
+}
+
 
 .modal-md {
     max-width: 700px;
@@ -575,9 +583,22 @@ a.pinterest .front {
     border-radius: 4px;
 }
 
+#registerModal .modal-dialog{
+    max-width: 900px;
+}
+
+#loginModal .modal-dialog {
+    max-width: 750px;
+}
+
+/* #forgotModal .modal-dialog {
+    max-width: 680px;
+} */
+
 a.loginLink {
     font-weight: 500;
     color: #9a0031;
+    cursor: pointer;
 }
 
 .inputControl{
@@ -605,7 +626,7 @@ a.loginLink {
 
 .signupScreenWrapper{
     max-width: 900px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .signupScreenWrapper .form-control, .loginWrapper .form-control{

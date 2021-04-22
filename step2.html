@@ -268,7 +268,7 @@
                         <span>/day</span>
                     </div>
 
-                    <button class="btn btn-outline-dark btn-rounded"  data-toggle="modal" data-target="#reserveModal">
+                    <button class="btn btn-outline-dark btn-rounded" data-toggle="modal" data-target="#reserveModal">
                         <i class="fa fa-calendar-alt mr-2"></i>
                         Reserve Now
                     </button>
@@ -644,7 +644,7 @@
         <div class="container d-flex flex-wrap align-items-center">
             <div class="vip_card text-center mb-3">
                 <h5 class="text-golden">Become VIP Loyality Member</h5>
-                <img src="./img/rrrcard.png" />
+                <img src="./img/rrrcard.png" data-toggle="modal" data-target="#registerModal" />
             </div>
 
             <img src="./img/off30.png" class="discountimg mb-3" />
@@ -777,6 +777,215 @@
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Reserve</button>
         </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title">Register</h5> -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row align-items-center signupScreenWrapper">
+                    <div class="col-md-6">
+                        <img src="./img/login.png" class="w-100" />
+                    </div>
+                    <div class="col-md-6">
+                    <div>
+                        <h3 class="signupTitle">Registration Form</h3>
+                
+                        <form class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <div class="inputControl">
+                                <input type="text" class="form-control" placeholder="First Name" />
+                                <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-6 mb-3">
+                                <div class="inputControl">
+                                <input type="text" class="form-control" placeholder="Last Name" />
+                                <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-12 mb-3">
+                                <div class="inputControl">
+                                <input type="email" class="form-control" placeholder="Email" />
+                                <i class="fa fa-envelope"></i>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-12 mb-3">
+                                <div class="inputControl">
+                                <input type="number" class="form-control" placeholder="Mobile Number" />
+                                <i class="fa fa-phone-alt"></i>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-6 mb-3">
+                                <div class="inputControl">
+                                <input type="password" class="form-control" placeholder="Password" />
+                                <i class="fa fa-lock"></i>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-6 mb-3">
+                                <div class="inputControl">
+                                <input type="password" class="form-control" placeholder="Confirm Password" />
+                                <i class="fa fa-lock"></i>
+                                </div>
+                            </div>
+                
+                            <!-- <div class="col-md-12 d-flex justify-content-between mb-3">
+                                <label class="mb-0 d-flex align-items-center">
+                                    <input type="checkbox" class="mr-2" />Remember me?
+                                </label>
+                
+                                <a href="#" class="loginLink">Forgot Password</a>
+                            </div> -->
+                
+                            <div class="col-md-12">
+                                <input type="submit"  value="Register" class="btn btn-primary w-100 btn-rounded" />
+                
+                                <div class="mt-3 text-center">
+                                    Already registered? <a id="loginButton" class="loginLink">Sign in</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                
+                    </div>
+            
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    
+
+ <!-- Modal -->
+ <div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title">Register</h5> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+            <div class="row align-items-center signupScreenWrapper">
+                <div class="col-md-6">
+                    <img src="./img/login.png" class="w-100" />
+                </div>
+                <div class="col-md-6">
+                <div>
+                    <h3 class="signupTitle">Login Form</h3>
+            
+                    <form class="form-row">
+            
+                        <div class="col-md-12 mb-3">
+                            <div class="inputControl">
+                            <input type="email" class="form-control" placeholder="Email" />
+                            <i class="fa fa-envelope"></i>
+                            </div>
+                        </div>
+            
+                       
+                        <div class="col-md-12 mb-3">
+                            <div class="inputControl">
+                            <input type="password" class="form-control" placeholder="Password" />
+                            <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
+            
+                     
+            
+                        <div class="col-md-12 d-flex justify-content-between mb-3">
+                            <label class="mb-0 d-flex align-items-center">
+                                <input type="checkbox" class="mr-2" />Remember me?
+                            </label>
+            
+                            <a id="forgotButton" class="loginLink">Forgot Password</a>
+                        </div>
+            
+                        <div class="col-md-12">
+                            <input type="submit"  value="Login" class="btn btn-primary w-100 btn-rounded" />
+            
+                            <div class="mt-3 text-center">
+                                Do not have an account ? <a id="signupButton" class="loginLink">Sign Up</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            
+                </div>
+        
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="forgotModal" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Forgot Password</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+           
+                <div>
+                   
+            
+                    <form class="form-row">
+            
+                        <div class="col-md-12 mb-3">
+                            <label>Email Address <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" />
+                        </div>
+            
+                       
+
+            
+                        <div class="col-md-12">
+                            <input type="submit"  value="Submit" class="btn btn-primary w-100 btn-rounded" />
+            
+                    
+                        </div>
+                    </form>
+                </div>
+                
+        
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div> -->
       </div>
     </div>
   </div>
