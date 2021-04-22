@@ -99,18 +99,14 @@
             <a href="#" class="sidebarLink">
                 <i class="fa fa-cog"></i> Settings
             </a>
-
-            <a href="#" class="sidebarLink">
-                <i class="fa fa-user"></i> Profile
-            </a>
         </div>
 
         <div class="main_panel">
             <div class="card">
                 <div class="card-body">
-                    <div class="text-right mb-3">
+                    <!-- <div class="text-right mb-3">
                         <button class="btn btn-primary">Edit</button>
-                    </div>
+                    </div> -->
 
                     <form class="form-row">
                         <div class="col-md-12 mb-3 text-center">
@@ -143,13 +139,32 @@
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label>First Name</label>
-                            <input type="text" class="form-control" />
+                            <label>Phone Number</label>
+                            <input type="number" class="form-control" />
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label>First Name</label>
-                            <input type="text" class="form-control" />
+                            <label>Email</label>
+                            <input type="email" class="form-control" />
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Birthday</label>
+                            <input type="date" class="form-control" />
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Gender</label>
+                            <select class="form-control">
+                                <option>Choose Option</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Transgender</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-12 text-right">
+                            <button class="btn btn-primary" type="submit">Submit</button>
                         </div>
                     </form>
                 </div>
