@@ -3,6 +3,47 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.form-control {
+    height: auto;
+    line-height: normal;
+    font-weight: 400;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+textarea.form-control {
+    min-height: 120px;
+}
+
+
+h4 {
+    font-weight: 700;
+}
+
+.pac-container.pac-logo{
+    z-index:9999;
+}
+
+.reserve-btn{
+    width:100%;
+    max-width:180px;
+}
+
+.cursor-pointer{
+    cursor:pointer;
+}
+
+
+a, a:hover{
+    color:#9a0031;
+    cursor:pointer;
+}
+
+a.text-primary, a.text-primary:focus, a.text-primary:hover{
+    color:#9a0031 !important;
+}
+
 .container{
     max-width: 1300px;
 }
@@ -100,13 +141,15 @@ h5{
 }
 
 .mobile_logo {
-    max-width: 128px;
+    max-width: 120px;
+    width: 100%;
 }
 
 .header_mid {
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 10px 0;
 }
 
 
@@ -127,6 +170,9 @@ h5{
     }
     .header_contact{
         font-size: 14px;
+        width:100%;
+        text-align:center;
+        padding:10 0px;
     }
 
     .crash_div {
@@ -137,25 +183,14 @@ h5{
         font-size: 12px;
     }
     
-    .brands span{
-        height:50px !important;
-        width:50px !important;
-        font-size:12px !important;
-    }
 }
 
-@media(max-width:320px){
+@media(max-width:400px){
     .main_header .navbar-brand{
-        max-width:200px;
+        max-width:initial !important;
+        width: auto !important;
     }
     
-    .header_contact {
-        font-size: 12px;
-    }
-    
-    .crash_div {
-        max-width: 160px;
-    }
 }
 /* Header end */
 
@@ -220,6 +255,30 @@ h5{
 
 /* category start */
 
+.discount_badge{
+    display:inline-block;
+    width:250px;
+    position:relative;
+}
+
+.discount_badge .img{
+    width:100%;
+}
+
+
+.discount_badge span {
+    position: absolute;
+    top: 18px;
+    right: 100px;
+    line-height: normal;
+    font-size: 70px;
+    text-shadow: 1px 0px 0px #cbb9b9;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
 .cat_div {
     display: block;
     position: relative;
@@ -271,14 +330,22 @@ h5{
 
 /* Footer top section start */
 
+
+
 .discountimg {
     width: 100%;
     max-width: 220px;
 }
 
 .feature_img {
-    width: 18px;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
     margin-right: 12px;
+}
+
+.features_div h5{
+    font-size: 18px;
 }
 
 @media(min-width:768px){
@@ -301,6 +368,10 @@ h5{
     .features_div{
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    .card_section > .d-flex{
+        justify-content:center;
     }
 }
 /* Footer top section end */
@@ -498,12 +569,12 @@ a.pinterest .front {
 
 
 .color_code img, .color_tab{
-    width: 25px;
+    width: 50px;
     height: 25px;
     margin: 3px;
     display: inline-block;
     object-fit: cover;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     box-shadow: 0 0 9px #00000078;
     cursor: pointer;
     object-position: center center;
@@ -511,6 +582,30 @@ a.pinterest .front {
 
 .car_list_section {
     border-bottom: 1px solid #e8e8e8;
+}
+
+.car_specification_list{
+    text-align:center;
+}
+
+.car_specification_list .item{
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.car_specification_list .item:not(:last-child){
+    margin-right: 8px;
+}
+
+.car_specification_list .item img{
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
+
+.car_specification_list .item span{
+    font-weight:500;
 }
 
 
@@ -595,11 +690,11 @@ a.pinterest .front {
 
 /* Login Page Start */
 #registerModal .modal-dialog{
-    max-width: 900px;
+    max-width: 700px;
 }
 
 #loginModal .modal-dialog {
-    max-width: 750px;
+    max-width: 700px;
 }
 
 
@@ -622,9 +717,15 @@ a.loginLink {
 
 .inputControl i{
     position: absolute;
-    top:50%;
+    top: 12px;
     right: 0;
-    transform: translateY(-50%);
+}
+
+.inputControl .error{
+    color:#dc3545;
+    margin-bottom: 0;
+    display: block;
+    margin-top: 5px;
 }
 
 .inputControl input{
@@ -643,6 +744,24 @@ a.loginLink {
     max-width: 900px;
     /*margin: auto;*/
 }
+
+.signupCardSection{
+    max-width:170px;
+}
+
+.signupCardSection h5{
+    font-weight:700;
+    font-size:16px;
+}
+
+.signupCardSection img{
+    max-width:120px;
+}
+
+.signupScreenWrapper .leftsection h5{
+    font-weight:700;
+}
+
 
 .signupScreenWrapper .form-control, .loginWrapper .form-control{
     border: 0;
