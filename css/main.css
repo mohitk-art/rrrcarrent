@@ -3,20 +3,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.form-control {
-    height: auto;
-    line-height: normal;
-    font-weight: 400;
-    border-radius: 3px;
-    padding: 10px 15px;
-    font-size: 14px;
-}
-
-textarea.form-control {
-    min-height: 120px;
-}
-
-
 h4 {
     font-weight: 700;
 }
@@ -283,7 +269,6 @@ h5{
     display: block;
     position: relative;
     text-align: center;
-    padding-top: 20px;
     padding-bottom: 50px;
     cursor: pointer;
     text-decoration: none !important;
@@ -300,32 +285,79 @@ h5{
     height: 100%;
 }
 
+.discount_badge_box{
+    display:flex;
+    align-items:center;
+}
+
+.discount_badge_box > img{
+    width:100%;
+    max-width:170px;
+}
+
+.discount_badge_box .offno {
+    font-size: 56px;
+    margin-left: 10px;
+    font-weight: 600;
+    margin-right: 10px;
+    color:#005901;
+}
+
+.discount_badge_box .offtext {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.categories .row > div:nth-child(odd) .cat_title {
+    color:#0b69e2;
+}
+
+.categories .row > div:nth-child(even) .cat_title {
+    color:#8c4b1e;
+}
+
+
 .cat_img {
-    width: 90%;
-    margin-bottom: 8px;
-    object-fit: contain;
+width:100%;
+object-fit:contain;
+height:150px;
 }
 
 .cat_title {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #d7d7d7;
     bottom: 0;
+    background-color: #d7d7d7d4;
     margin: 0;
-    width: 100%;
+    width: 115px;
+    height: 115px;
 }
 
-.vip_card img{
-    width: 100%;
-    max-width: 200px;
-}
 
 .vip_card h5{
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 600;
+    line-height: normal;
 }
 /* category end */
+
+.features__icon_list{
+    display:inline-block;
+    text-align:left;
+}
+
+.features__icon_list h5{
+    
+}
 
 
 /* Footer top section start */
@@ -349,9 +381,6 @@ h5{
 }
 
 @media(min-width:768px){
-    .features_div{
-        margin-left: auto;
-    }
 
     .discountimg{
         position: relative;
@@ -360,12 +389,8 @@ h5{
 }
 
 @media(max-width:767px){
-    .discountimg{
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    .features_div{
+    .features_div, .discountimg, .crash_div{
         margin-left: auto;
         margin-right: auto;
     }
@@ -877,3 +902,60 @@ a.loginLink {
 
 
 /* Dashboard Page End */
+
+
+/* FAQ Page Start */
+.faqAccoordion .card-header{
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-weight: 600;
+    margin-bottom: 0 !important;
+    border: 0;
+    border-left: 3px solid #9a0031;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.faqAccoordion .card{
+    border:0;
+}
+
+.faqAccoordion .card-header::before {
+    content: "Q.";
+    position: absolute;
+    color:#9a0031;
+    left: 10px;
+    top: 50%;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+
+.faqAccoordion .card-body::before {
+    content: "A.";
+    position: absolute;
+    left: 10px;
+    color:#a6a6a6;
+    top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.faqAccoordion .card-header > i{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.faqAccoordion .card-body{
+    border-left: 3px solid #a6a6a6;
+    position: relative;
+    padding-left: 40px;
+    font-weight: 500;
+}
+
+.faqAccoordion .card-header:not(.collapsed) > i::before{
+    content: "\f068";
+}
+
+/* FAQ Page End */
