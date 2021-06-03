@@ -79,6 +79,10 @@ h5{
     max-width: 284px;
 }
 
+.main_header > .navbar{
+    padding-bottom: 0;
+}
+
 .main_header .navbar-brand {
     margin-right: 0;
     display: inline-block;
@@ -86,6 +90,8 @@ h5{
     width: 100%;
     padding-right: 10px;
 }
+
+
 
 .header_top{
     display: flex;
@@ -100,9 +106,9 @@ h5{
 }
 
 .crash_div img {
-    width: 100%;
-    height: 118px;
-    object-fit: cover;
+   width: 100%;
+    height: 100px;
+    object-fit: contain;
 }
 .header_contact {
     font-size: 20px;
@@ -178,11 +184,37 @@ h5{
     }
     
 }
+
+
+@media(min-width:1024px){
+    .main_header .navbar-brand {
+        margin-bottom: -66px;
+        z-index: 1;
+        padding-left: 10px;
+        max-width: 260px;
+        position: relative;
+    }
+
+    .main_header .navbar-brand::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 26px;
+        width: 100%;
+        height: 40px;
+        background-color: #fff;
+        z-index: -1;
+    }
+}
 /* Header end */
 
 
 
 /* header bottom start*/
+.header_bottom {
+    margin-top: 30px;
+}
+
 .header_bottom .container{
     display: flex;
     align-items: center;
@@ -192,7 +224,14 @@ h5{
 
 .cmonimg {
     width: 100%;
-    max-width: 200px;
+    max-width: 130px;
+    margin:auto;
+}
+
+@media(max-width:400px){
+    .cmonimg {
+        max-width:100px;
+    }
 }
 
 .brands {
@@ -205,18 +244,17 @@ h5{
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 90px;
-    font-size: 14px;
+    height: 70px;
     font-weight: 600;
     color: #ffff;
-    width: 90px;
+    width: 70px;
     border-radius: 50%;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .brands i{
     margin: 0 9px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .you_choise {
@@ -269,7 +307,8 @@ h5{
     display: block;
     position: relative;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 104px;
+    height:100%;
     cursor: pointer;
     text-decoration: none !important;
     color: inherit !important;
@@ -291,36 +330,40 @@ h5{
 }
 
 .discount_badge_box > img{
-    width:100%;
-    max-width:170px;
+    width: 100%;
+    max-width: 145px;
 }
 
 .discount_badge_box .offno {
-    font-size: 56px;
+    font-size: 44px;
     margin-left: 10px;
     font-weight: 600;
     margin-right: 10px;
-    color:#005901;
+    color: #005901;
 }
 
 .discount_badge_box .offtext {
     font-weight: 900;
-    font-size: 22px;
+    font-size: 18px;
 }
 
-.categories .row > div:nth-child(odd) .cat_title {
+.categories {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.categories .form-row > div:nth-child(odd) .cat_title {
     color:#0b69e2;
 }
 
-.categories .row > div:nth-child(even) .cat_title {
+.categories .form-row > div:nth-child(even) .cat_title {
     color:#8c4b1e;
 }
 
 
 .cat_img {
-width:100%;
-object-fit:contain;
-height:150px;
+    width: 100%;
+    height: auto;
 }
 
 .cat_title {
@@ -344,7 +387,7 @@ height:150px;
 
 
 .vip_card h5{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: normal;
 }
@@ -370,14 +413,14 @@ height:150px;
 }
 
 .feature_img {
-    width: 28px;
-    height: 28px;
+    width: 27px;
+    height: 27px;
     object-fit: contain;
     margin-right: 12px;
 }
 
 .features_div h5{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media(min-width:768px){
@@ -424,13 +467,38 @@ height:150px;
 
 /* Footer Start */
 
+.footerLeftText {
+    font-size: 8px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #fff;
+    max-width: 370px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
 .main_footer{
     background-color: #7DC07D !important;
 }
 
+.instagramImg img {
+    width: 37px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.terms_link {
+    display: inline-block;
+    font-weight: 600;
+    color: #000 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-decoration: none !important;
+}
+
 .copyright_text {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     margin-left: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -546,6 +614,14 @@ a.pinterest .front {
 /* Step 2 Page Start */
 /* ########################################### */
 
+.placeholder_text {
+    font-weight: 700;
+    font-size: 24px;
+    color: #b3b3b3;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
 .car_title{
     font-weight: 700;
     font-size: 24px;
@@ -554,6 +630,26 @@ a.pinterest .front {
 .price_div{
     display: flex;
 }
+
+.price_div del{
+    position:relative;
+    padding: 0px 5px;
+    text-decoration:none !important;
+}
+
+.price_div del:before{
+    content: "";
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background-color: red;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
 
 .price_div h3{
     font-size: 45px;
@@ -593,17 +689,43 @@ a.pinterest .front {
 }
 
 
-.color_code img, .color_tab{
+.color_code > *{
     width: 50px;
-    height: 25px;
-    margin: 3px;
     display: inline-block;
+    position:relative;
+    cursor:pointer;
+}
+
+.color_code > *> img{
+    width:100%;
+   /*height: 25px; */
+}
+
+.color_code > *> span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-weight: 600;
+    width: 100%;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    height: 100%;
+    z-index: 1;
+    font-size: 11px;
+    line-height:normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color_code> img, .color_tab{
+    margin: 3px;
     object-fit: cover;
-    /*border-radius: 50%;*/
     box-shadow: 0 0 9px #00000078;
     cursor: pointer;
     object-position: center center;
 }
+
 
 .car_list_section {
     border-bottom: 1px solid #e8e8e8;
@@ -691,7 +813,7 @@ a.pinterest .front {
 }
 
 .mobile_div > img{
-    width: 190px;
+    width: 170px;
 }
 
 
@@ -961,6 +1083,7 @@ a.loginLink {
 /* FAQ Page End */
 
 
+
 /* About Page Start */
 .thumb_ul > * {
     display: block;
@@ -1042,3 +1165,72 @@ h3.sub_title {
     }
 }
 /* About Page End */
+
+
+
+
+/*Choose Car Page */
+.bg_light{
+    background-color: #f9f5f4;
+}
+
+.car_services{
+    display: flex;
+}
+
+.car_services span{
+    position: relative;
+}
+
+.car_services span{
+    padding-left: 20px !important;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.car_services span > img {
+    width: 13px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.font-weight-medium{
+    font-weight: 500;
+}
+
+
+.bg_light_green{
+    background-color: #edfae6;
+}
+
+.driving_liecense_steps {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    align-items: center;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+
+.driving_liecense_steps > i{
+    font-size: 20px;
+    
+}
+
+.price_items {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.price_items .small{
+    font-weight: 500 !important;
+}
+/* Choose Car Page End */
