@@ -1178,22 +1178,22 @@ h3.sub_title {
     display: flex;
 }
 
-.car_services span{
-    position: relative;
-}
-
-.car_services span{
-    padding-left: 20px !important;
+.car_services span {
+    padding-left: 30px !important;
     font-weight: 600;
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    position: relative;
+    margin-bottom: 12px;
 }
 
 .car_services span > img {
-    width: 13px;
+    width: 20px;
+    height: 25px;
+    object-fit: contain;
     position: absolute;
     left: 0;
     top: 3px;
+    filter: brightness(0);
 }
 
 .font-weight-medium{
