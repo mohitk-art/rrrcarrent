@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="./css/color.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Car Rental</title>
+  </head>
+  <body>
+    
+    <style>
+      h3{
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+      }
+    
+      p{
+        font-size: 14px;
+        line-height: 26px;
+      }
+    
+      b{
+        font-weight: 600;
+      }
+    </style>
+    
+    <header class="main_header">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white flex-wrap px-0">
+			   
+				<div class="container header_top px-3">
+					<a class="navbar-brand" href="http://jcsoftwaresolution.com/car_rent/public/">
+						<img src="http://jcsoftwaresolution.com/car_rent/public/frontend/img/logo.png" class="desk_logo">
+						<img src="http://jcsoftwaresolution.com/car_rent/public/frontend/img/logo.png" class="mobile_logo">
+					</a>
+					
+					<img src="https://rentsuv.com/frontend/img/cmon.png" class="cmonimg mb-3">
+					
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					
+					
+					<div class="header_contact">
+						<a class="text-dark text-decoration-none" href="tel:(877) 773-6878"><i class="fa fa-phone-alt mr-2"></i> (877) 773-6878</a> <br>
+						<a class="text-dark text-decoration-none" href="mailto:info@rentsuv.com"><i class="fa fa-envelope mr-2"></i> info@rentsuv.com</a>
+					</div>
+				
+				</div>
+				
+				<div class="collapse navbar-collapse header_collapse w-100" id="navbarNav">
+				<div class="container px-3">
+				  <ul class="navbar-nav align-items-center ml-auto">
+					<!--<li class="nav-item mr-auto logob_img_li">-->
+					<!--	<img src="http://jcsoftwaresolution.com/car_rent/public/frontend/img/logob.png" class="logob_img" />-->
+					<!--</li>-->
+					<li class="nav-item">
+					  <a class="nav-link" href="http://jcsoftwaresolution.com/car_rent/public/">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="http://jcsoftwaresolution.com/car_rent/public/about">About US</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="http://jcsoftwaresolution.com/car_rent/public/faq">FAQ</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="http://jcsoftwaresolution.com/car_rent/public/location">Locations</a>
+					</li>
+									  </ul>
+				  </div>
+				</div>
+
+			  
+			  </nav>
+	</header>
+
+
+  <section class="header_bottom">
+    <div class="container">
+    <!--<img src="http://jcsoftwaresolution.com/car_rent/public/frontend/img/cmon.png" class="cmonimg mb-3" />-->
+
+    <div class="brands mb-3">
+        <span class="bg-primary">
+            Exact <br> Brand
+        </span>
+
+        <i class="fa fa-arrow-circle-right"></i>
+
+        <span class="bg-green">
+            Exact <br> Model
+        </span>
+
+        <i class="fa fa-arrow-circle-right"></i>
+
+        <span class="bg-blue">
+            Exact <br> Color
+        </span>
+    </div>
+
+    <div class="you_choise mb-3">
+        Your Choice
+        <i class="far fa-hand-point-right"></i>
+        <span class="text-light-green">U-Drive</span>
+        <i class="far fa-hand-point-right"></i>
+        <span class="text-primary">No Game</span>
+        <i class="far fa-hand-point-right"></i>
+        <span class="text-pink">No Gimmick</span>
+    </div>
+    </div>
+</section>
+
+
+
+<section>
+  <div class="container" style="max-width: 900px;">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-3">
+        <label>Track Booking</label>
+        <div class="track_form">
+        <input type="text" class="form-control mr-2" />
+        <button class="btn btn-primary">Search</button>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <img src="./img/track-order.png" class="w-100" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container py-3">
+  <div class="row">
+      <div class="col-md-8">
+          <div class="p-3 rounded bg-white shadow-sm mb-3">
+              <div class="form-row">
+                  <div class="col-md-8">
+                      <h4 class="mb-3">Range Rover Sport</h4>
+                      <div class="car_services form-row">
+
+                          
+                          <span class="col-md-6">
+                              <img src="./img/CruiseControl.png" />
+                              Cruise Control
+                          </span>
+
+                          <span class="col-md-6">
+                              <img src="./img/Leather_Interior.png" />
+                              Leather Interior
+                          </span>
+
+                          <span class="col-md-6">
+                              <img src="./img/radio.png" />
+                              AM/FM Stereo Radio
+                          </span>
+
+                          <span class="col-md-6">
+                              <img src="./img/Infotainment.png" />
+                              Infotainment
+                          </span>
+
+                          <span class="col-md-6">
+                              <img src="./img/bluwtooth.png" />
+                              Bluetooth
+                          </span>
+
+                          <span class="col-md-6">
+                              <img src="./img/gps.png" />
+                              GPS
+                          </span>
+
+                          <span class="col-md-6">
+                              <img src="./img/passanger.png" />
+                              5 Passangers
+                          </span>
+
+                          <span class="col-md-6">
+                              <img src="./img/door.png" />
+                              4 Doors
+                          </span>
+
+                          <span class="col-md-6">
+                              <img src="./img/air-conditioning.png" />
+                              Air Conditioning
+                          </span>
+
+                          <span class="col-md-6">
+                              <img src="./img/transmission.png" />
+                              Automatic
+                          </span>
+
+                          <span class="col-md-6">
+                              <img src="./img/luggage.png" />
+                              luggage
+                          </span>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4">
+                      <img src="./img/rangeRoverSport.jpg" class="w-100" />
+                  </div>
+              </div>
+
+          </div>
+
+
+          
+
+
+          <div class="rounded bg-white shadow-sm mb-3">
+              <h4 class="card-header bg-white">Car Rental Location</h4>
+              <div class="p-3">
+              <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                      <label class="font-weight-bold">Pick-up</label>
+                      <div>113 Livingston Street, Brooklyn, NY 11201</div>
+
+
+                      <div class="d-flex mt-3">
+                          <i class="fa fa-clock mr-2 mt-1"></i>
+                          <div>
+                              <b class="font-weight-medium">Hours of Operation</b><br/>
+                              6:00am - 10:00pm
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                      <label class="font-weight-bold">Drop-off</label>
+                      <div>113 Livingston Street, Brooklyn, NY 11201</div>
+
+                      <div class="d-flex mt-3">
+                          <i class="fa fa-clock mr-2 mt-1"></i>
+                          <div>
+                              <b class="font-weight-medium">Hours of Operation</b><br/>
+                              6:00am - 10:00pm
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+
+
+          <div class="rounded bg-white shadow-sm mb-3">
+              <h4 class="card-header bg-white">Contact Details</h4>
+
+              <div class="p-3">
+              <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                      <label>First Name <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" />
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                      <label>Last Name <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" />
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                      <label>Phone Number <span class="text-danger">*</span></label>
+                      <input type="number" class="form-control" />
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                      <label>Email <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control" />
+                  </div>
+
+                  <div class="col-md-12">
+                      <b class="d-block mb-2">Whould you like to receive SMS notification from 
+                          <span class="text-primary">RRR SUV RENTAL about this rental?</span>
+                      </b>
+
+                      <label class="d-block">
+                          <input type="radio" name="receivemessage" class="mr-2" /> Yes, I would like to receive text messages about this rental to the phone number on this reservation
+                      </label>
+
+                      <label class="d-block">
+                          <input type="radio" name="receivemessage" class="mr-2" /> No
+                      </label>
+
+
+                      <div class="font-weight-medium">By selecting "Yes" above, message and date rates may apply. Message frequency varies and depends on the activity of your reservation. You can opt out by responding STOP at any time. For more information, please review our <a class="text-primary">Privacy Policy</a> and <a class="text-primary">SMS Terms</a>. If you choose not to receive text messages, we will give you a courtesy reminder call 1-2 days prior to your reservation.</div>
+                  </div>
+              </div>
+              </div>
+          </div>
+
+          <div class="p-3 rounded bg-white shadow-sm d-flex align-items-center mb-3">
+              <img src="./img/free_cancellation.png"  class="mr-2" style="width: 100px;" />
+
+              <div>
+                  <b class="text-blue">Free Cancellation</b><br/>
+
+                  Tow days or (48 hrs) Prior to Reservation beginning data.  <br/>
+                  Same Day Reservation Must Complete Reservation Prior To Pick-Up
+                  <br/>
+                  <button class="btn btn-primary mt-2">Cancel</button>
+              </div>
+
+              
+          </div>
+
+
+          <div class="rounded bg-white shadow-sm mb-3">
+              <h4 class="card-header bg-white">Drive with rental car protection <span class="badge badge-success">Highly Recommended</span></h4>
+              <div class="p-3">
+
+                  
+                  Select Yes or No to continue booking <span class="text-danger">*</span>
+
+
+                  <div class="bg_light_green mt-2 p-3 d-flex justify-content-between">
+                      <section>
+                      <label>
+                          <input type="radio" name="drive" class="mr-2" /> <b>Yes</b>, I need collision protection 
+                      </label>
+
+                      <ul class="checks_ul">
+                          <li>
+                              Covers your rental car from <b>theft</b>, <b>vandalism</b>, and <b>collision damage</b>
+                          </li>
+
+                          <li>
+                              <b>$0 deducatible/excess</b>
+                          </li>
+
+                          <li>
+                              Up to <b>$75,000</b> in primary coverage: no need to claim on your regular insurance
+                          </li>
+
+                          <li>
+                              <b>24/7</b> emergency <b>assistance</b>
+                          </li>
+
+                          <li>
+                              <b>100%</b> refund if you <b>cancel insurance</b> before car pick-up time
+                          </li>
+                      </ul>
+
+                      <a class="text-primary" target="_new">View insurance details and disclosures</a>
+                      </section>
+
+                      <div class="drive_price">
+                          <h4>$22.00</h4>
+                          <span class="text-primary">/calendar day</span>
+                      </div>
+                  </div>
+                 
+                  
+
+
+              </div>
+          </div>
+
+
+
+          <div class="rounded bg-white shadow-sm">
+              <h4 class="card-header bg-white">
+                  Save Time at the Counter
+              </h4>
+
+              <div class="p-3 d-flex justify-content-between align-items-start">
+
+                  <section>
+                  Provide more rental details and <b>spend less time at the counter</b>.<br/>
+
+                  <ul class="mt-2">
+                      <li>You won't be charged right now</li>
+                      <li>You can cencel at any time</li>
+                      <li>It should only take a couple of minutes</li>
+                  </ul>
+
+                  <b class="d-block mb-2">Whould you like to save time at the counter?</b>
+                  <label class="d-block">
+                      <input type="radio" name="savetime" class="mr-2" /> Yes, I'd like to save time
+                  </label>
+                  <label class="d-block">
+                      <input type="radio" name="savetime" class="mr-2" /> No, I'll provide my information at the couter
+                  </label>
+                  </section>
+
+                  <img src="./img/stopewatch.png" style="width: 60px;" />
+              </div>
+
+              <div class="p-3 driving_liecense_steps">
+                  <span>Lookup Your Details</span>
+                  <i class="fa fa-arrow-right"></i>
+                  <span>Verify / Complete your Detail</span>
+              </div>
+
+              <div class="p-3">
+                  <b class="d-block mb-2">DRIVER'S LICENSE</b>
+
+                  <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                          <label>Issuing Country <span class="text-danger">*</span></label>
+                          <select class="form-control">
+                              <option>United States</option>
+                          </select>
+                      </div>
+
+                      <div class="col-md-6 mb-3">
+                          <label>Issuing Authority <span class="text-danger">*</span></label>
+                          <select class="form-control">
+                              <option>Select</option>
+                          </select>
+                      </div>
+
+                      <div class="col-md-12 mb-3">
+                          <label>Driver's License Number <span class="text-danger">*</span></label>
+                          <input type="number" class="form-control" />
+                      </div>
+
+                      <div class="col-md-12">
+                          <button class="btn btn-primary">Next</button>
+
+                          <span class="mx-2"><i class="fa fa-shield-alt mr-2"></i> Your information will be submitted over a <b>secure connection</b>.</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+      </div>
+      <div class="col-md-4">
+          <div class="p-3 rounded bg-white shadow-sm mb-3">
+              <div class="d-flex">
+                  <h4>$57</h4>
+
+                  <span class="ml-2 mt-2">per day</span>
+              </div>
+
+              <span class="text-primary d-block mb-2">Free Cancellation</span>
+              <span class="d-block mb-2">Pay at pick-up</span>
+          </div>
+
+
+          <div class="p-3 bg-white shadow-sm">
+              <h5 class="mb-3">Price Details</h5>
+
+              <span class="d-block mb-2 font-weight-medium">Pay at pick-up</span>
+
+              <div class="price_items">
+                  <span>Car Rental fee x 7 days
+                  <div class="small">$57.43 per day</div>
+                  </span>
+
+                  <span>$402.03</span>
+              </div>
+
+              <div class="price_items">
+                  <span>Taxes and fees <i class="fa fa-info-circle"></i>
+                  </span>
+
+                  <span>$179.35</span>
+              </div>
+
+              <hr/>
+
+              <div class="price_items font-weight-bold">
+                  <span>Total
+                  </span>
+
+                  <span>$581.38</span>
+              </div>
+
+              <div class="price_items">
+                  <span>Pay at pick-up
+                  </span>
+
+                  <span>$581.38</span>
+              </div>
+
+              <div class="price_items">
+                  <span>Pay Now
+                  </span>
+
+                  <span>$0.00</span>
+              </div>
+
+              <button class="btn btn-primary w-100">Reserve</button>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+    <footer class="main_footer">
+        <div class="container d-flex align-items-center flex-wrap">
+            <ul class="social-nav model-3d-0 footer-social w3_agile_social">
+                <li><a href="#" class="facebook">
+                      <div class="front"><i class="fab fa-facebook-f" aria-hidden="true"></i></div>
+                      <div class="back"><i class="fab fa-facebook-f" aria-hidden="true"></i></div></a></li>
+                <li><a href="#" class="twitter">
+                      <div class="front"><i class="fab fa-twitter" aria-hidden="true"></i></div>
+                      <div class="back"><i class="fab fa-twitter" aria-hidden="true"></i></div></a></li>
+                <li><a href="#" class="instagram">
+                      <div class="front"><i class="fab fa-instagram" aria-hidden="true"></i></div>
+                      <div class="back"><i class="fab fa-instagram" aria-hidden="true"></i></div></a></li>
+                <li><a href="#" class="pinterest">
+                      <div class="front"><i class="fab fa-google-plus-g" aria-hidden="true"></i></div>
+                      <div class="back"><i class="fab fa-google-plus-g" aria-hidden="true"></i></div></a></li>
+            </ul>
+
+            <span class="copyright_text">Copyright © 2021  RRR SUV Rental Luxury SUV 4 all. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

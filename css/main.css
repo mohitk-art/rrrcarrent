@@ -1,3 +1,8 @@
+:root {
+    --primary:#9a0031;
+}
+
+
 body{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
@@ -1234,3 +1239,94 @@ h3.sub_title {
     font-weight: 500 !important;
 }
 /* Choose Car Page End */
+
+
+
+.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span{
+    border-color: var(--primary) !important;
+}
+
+.daterangepicker .calendar-table th{
+    font-weight:bold;
+}
+
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td{
+    padding:5px 10px;
+}
+
+.daterangepicker .drp-calendar.left{
+    padding-left:0 !important;
+    padding-bottom:0 !important;
+}
+
+.daterangepicker .drp-calendar.right{
+    padding-right:0 !important;
+    padding-left:0 !important;
+    padding-bottom:0 !important;
+}
+
+.daterangepicker .calendar-time {
+    background-color: #9a003140;
+    padding: 6px !important;
+}
+
+.daterangepicker .table-condensed tbody td{
+    font-weight:bold;
+}
+
+.daterangepicker .table-condensed thead tr:nth-child(2) th{
+    font-weight:400;
+}
+
+.daterangepicker .drp-calendar.left .calendar-time:before{
+    content:"Pickup";
+}
+
+.daterangepicker .drp-calendar.right .calendar-time:before{
+    content:"Drop-off";
+}
+
+.daterangepicker .drp-calendar.left .calendar-time:before,
+.daterangepicker .drp-calendar.right .calendar-time:before{
+    font-size:12px;
+    margin-right:10px;
+}
+
+.daterangepicker td.in-range{
+    background-color:#9a003121 !important;
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover{
+    background-color:var(--primary) !important;
+}
+
+
+
+#paymentForm input{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+
+
+.swal-button{
+    background-color:var(--primary) !important;
+}
+
+
+.track_form{
+    display: flex;
+}
+
+.form-control{
+    height: auto;
+}
