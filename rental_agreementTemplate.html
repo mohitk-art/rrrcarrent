@@ -1,16 +1,25 @@
 
+  <body style="background-color: #000">
+  
   <section class="container" style="background-color: #ffff;
-  border: 1px solid #e6e6e6;
-  max-width: 700px;
-  margin: auto;
   font-size: 14px;
   line-height: 22px;
+  margin:auto;
+  width:100%;
+  max-width:800px;
   padding: 15px;
   font-family: Arial, Helvetica, sans-serif;">
-  <div style="background-image: url(https://rentsuv.com/frontend/img/backimage.jpg);padding: 30px 30px;min-height: 650px;color: #fff;background-size: cover;">
-    <img src="https://rentsuv.com/frontend/img/logo.png" style="max-width: 120px;">
-    <h1 class="text-center mb-3">CAR RENTAL AGREEMENT TEMPLATE</h1>
-    <p>Prepared for [Client.FirstName][Client.LastName] by [Sender.FirstName]<br/> [Sender.LastName]</p>
+  <div style="background-image: url(https://rentsuv.com/frontend/img/agrrementbg.jpg);padding: 30px 30px;min-height: 980px;background-size: cover;">
+    <img src="https://rentsuv.com/frontend/img/logo.png" style="max-width: 200px;">
+    <h1 class="text-center mb-3" style="font-size: 52px;
+    line-height: 64px;
+    max-width: 500px;
+    margin-top: 22px;
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    border-bottom: 3px solid;">CAR RENTAL AGREEMENT</h1>
+    <p style="font-weight: 600;margin-bottom: 25px;">Prepared for [Client.FirstName][Client.LastName]</p>
+    <p style="font-weight: 600;">by <span style="color: #ee3036;">RRR SUV RENTAL RESERVATION TEAM</span></p>
   </div>
 
   <!-- <img src="https://rentsuv.com/frontend/img/backimage.jpg" style="width: 100%"> -->
@@ -63,7 +72,7 @@
           </tr>
 
           <tr class="item" style="background-color: #dadada;">
-            <td style="padding: 6px 8px;width: 190px">Primary vehicle operator:</td>
+            <td style="padding: 6px 8px;width: 190px">Additional vehicle operator:</td>
             <td style="padding: 6px 8px;">DL #</td>
           </tr>
          
@@ -74,7 +83,11 @@
 
     <h3>4. MILEAGE</h3>
 
-    <p>Mileage of the Rental Vehicle is mileage at the time of commencement of this Car Rental Agreement. Mileage on the vehicle will be limited [Mileage.Limitations]. Any mileage on the vehicle in excess of this limitation will be subject to an excess mileage surcharge of [Excess.Mileage.Fee] per mile.</p>
+    <p>Mileage of the Rental Vehicle is mileage at the time of commencement of this Car Rental Agreement.
+      Mileage on the vehicle will be limited [Unlimited Local Mileage]. <a style="color: #ee3036;">(see link for description of unlimited
+      local mileage)</a> Any mileage on the vehicle in excess of this limitation will be subject to an excess mileage
+      surcharge of [$.45 Cents] per mile.
+      </p>
 
     <h3>5. RENTAL FEES</h3>
 
@@ -116,10 +129,12 @@
 
     <p class="mb-5">DATE AND TIME OF VEHICLE PICKUP:</p>
 
-    <div class="d-flex justify-content-between mb-3">
-        <span>[Sender.FirstName] [Sender.LastName]</span>
-
-        <span>[Client.FirstName] [Client.LastName]</span>
-    </div>
+    <table style="width:100%;font-size: 14px;margin-top: 150px;">
+      <tr>
+          <td style="text-align:left">[Sender.FirstName] [Sender.LastName]</td>
+          <td style="text-align:right">{{ $first_name }} {{ $last_name }}</td>
+      </tr>
+  </table>
 
   </section>
+  </body>
