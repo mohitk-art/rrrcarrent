@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <title>Export Notes List PDF - Tutsmake.com</title>
+  <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+   <style>
+    
+</style>
+</head>
+<body>
+
+  <section class="container" style="background-color: #ffff;
+  font-size: 14px;
+  line-height: 22px;
+  margin:auto;
+  width:100%;
+  max-width:800px;
+  font-family: Arial, Helvetica, sans-serif;">
+    
+  <table style="width: 100%;">
+    <tr>
+      <td>
+        <img src="https://rentsuv.com/frontend/img/logo.png" style="max-width: 180px;">
+      </td>
+      <td style="text-align: right;font-size: 28px;font-weight: 600;">SUV Rental Agreement</td>
+    </tr>
+  </table>
+
+
+    <p>This SUV Rental Agreement is entered into between RRR SUV RENTAL (“Owner”) and {{ $first_name ?? '' }} {{ $last_name ?? ''}} (“Renter”)
+      (collectively the “Parties”) and outlines the respective rights and obligations of the Parties relating to the rental of a SUV (SPORT
+      UTILITY VEHICLE).
+      </p>
+
+
+    <h3>1. IDENTIFICATION OF THE RENTAL VEHICLE</h3>
+    <p>Owner hereby agrees to rent to Renter a passenger vehicle identified as follows:</p>
+
+    <ul style="padding-left: 20px;">
+        <li>Make: {{$make ?? ''}}</li>
+        <li>Model: {{$modal ?? ''}}</li>
+        <li>Year: {{$year ?? ''}}</li>
+        <li>VIN: {{$vin ?? ''}}</li>
+        <li>Color: {{$color ?? ''}}</li>
+    </ul>
+
+    <p>(Hereinafter referred to as “Rental SUV (<span style="color: #ee2f35;">SPORT UTILITY VEHICLE</span>)”.</p>
+
+    <h3>2. RENTAL TERM</h3>
+
+    <p>The term of this Car Rental Agreement runs from the date and hour of vehicle pickup as indicated just above the signature line at the bottom of this agreement until the return of the vehicle to Owner, and completion of all terms of this agreement by both Parties. The estimated rental term is as follows:</p>
+
+    <p>Estimated start date: {{$pick_up_date ?? ''}}</p>
+
+    <p>Estimated end date: {{$drop_off_date  ?? ''}}</p>
+
+    <p>The Parties may shorten or extend the estimate term of rental by mutual consent.</p>
+
+    <h3>3. SCOPE OF USE</h3>
+
+    <p>Renter will use the Rented Vehicle only for personal or routine business use and operate the Rented Vehicle only on properly
+      maintained roads and parking lots. Renter will comply with all applicable laws relating to holding licensure to operate the vehicle
+      and pertaining to operation of motor vehicles. Renter will not sublease the Rental Vehicle, use it as a commercial transportation
+      i.e. UberEATS, door dash or any other gig working apps. or use it as a vehicle for hire. </p>
+
+
+    <table class="table" style="width: 100%;font-size: 14px;">
+        <thead class="thead-dark" style="background-color: #65656f;color: #fff;">
+          <tr>
+            <th colspan="2" style="padding: 6px 8px;">RENTER WILL NOT ALLOW ANY OTHER PERSON TO OPERATE THE RENTED VEHICLE UNLESS IDENTIFIED HERE:</th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr class="item" style="background-color: #dadada;">
+            <td style="padding: 6px 8px;width: 190px;">Primary vehicle operator:</td>
+            <td style="padding: 6px 8px;">DL #</td>
+          </tr>
+
+          <tr class="item" style="background-color: #dadada;">
+            <td style="padding: 6px 8px;width: 190px">Additional vehicle operator:</td>
+            <td style="padding: 6px 8px;">DL #</td>
+          </tr>
+        
+        </tbody>
+      </table>
+      
+
+    <h3>4. MILEAGE</h3>
+
+    <p>Mileage of the Rental Vehicle is mileage at the time of commencement of this Car Rental Agreement.
+      Mileage on the vehicle will be limited [Unlimited Local Mileage]. <a style="color: #ee3036;">(see link for description of unlimited
+      local mileage)</a>
+      </p>
+
+      <p style="color: #ee3036;">Local Unlimited Mileage* *Consist of 5 boroughs of New York City (Brooklyn, Bronx, Manhattan, Queens, and Staten Island)
+        Defines as Local Rental and Unlimited Local Mileage. <a href="" style="color: #000;">Any other charges may apply $.45 cents USD per mile</a> after exceeded
+        150 miles daily allowances.</p>
+
+    <h3>5. RENTAL FEES</h3>
+
+    <p>Renter will pay to Owner rental fees for use of the Rental Vehicle as follows:</p>
+
+    <p>Total Rental Days Cost: $   &nbsp;&nbsp; <span style="font-size:12px;color:#ee3036;">(all transactions shall be in U$D. (United States Dollar)</span></p>
+
+
+    <h3>6. SECURITY DEPOSIT</h3>
+
+    <p>Renter will be required to provide a security deposit to Owner in the amount of [Security.Deposit] dollars (“Security Deposit”) to be used in the event of loss or damage to the Rental Vehicle during the term of this agreement. Owner may, in lieu of collection of a security deposit, place a hold on a credit card in the same amount.  In the event of damage to the Rental Vehicle, Owner will apply this Security Deposit to defray the costs of necessary repairs or replacement. If the cost for repair or replacement of damage to the Rental Vehicle exceeds the amount of the Security Deposit, Renter will be responsible for payment to the Owner of the balance of this cost.</p>
+
+    <h3>7. INSURANCE</h3>
+
+    <p>Renter must provide to Owner with proof of insurance that would cover damage to the Rental Vehicle at the time this SUV
+      (SPORT UTILITY VEHICLE) Rental Agreement is signed, as well as personal injury to the Renter, passengers in the Rented
+      Vehicle, and other persons or property. If the Rental Vehicle is damaged or destroyed while it is in the possession of Renter,
+      Renter agrees to pay any required insurance deductible and assign all rights to collect insurance proceeds to Owner.</p>
+
+    <h3>8. INDEMNIFICATION</h3>
+
+    <p>Renter agrees to indemnify, defend, and hold harmless the Owner for any loss, damage, or legal actions against Owner as a result
+      of Renter’s operation or use of the Rented Vehicle during the term of this SUV (SPORT UTILITY VEHICLE) Rental
+      Agreement. This includes any attorney fees necessarily incurred for these purposes. Renter will also pay for any parking tickets,
+      moving violations, or other citations received while in possession of the Rented Vehicle.
+      </p>
+
+    <h3>9. REPRESENTATIONS AND WARRANTIES</h3>
+
+    <p>Owner represents and warrants that to Owner’s knowledge, the Rental Vehicle is in good condition and is safe for ordinary operation of the vehicle. </p>
+
+    <p>Renter represents and warrants that Renter is legally entitled to operate a motor vehicle under the laws of this jurisdiction and will not operate it in violation of any laws, or in any negligent or illegal manner.</p>
+
+    <p style="color: #ee3036;">Renter has been given an opportunity to examine the Rental Vehicle in advance of taking possession of it, and upon such inspection, is not aware of any damage existing on the vehicle other than that notated by separate Existing Damage document.</p>
+
+    <h3>10. JURISDICTION AND VENUE</h3>
+
+    <p>In the event of any dispute over this agreement, this SUV (SPORT UTILITY VEHICLE) Rental Agreement will be interpreted
+      by the laws of New York State and any lawsuit or arbitration must be brought in the corresponding region of [New York City]. If
+      any portion of this agreement is found to be unenforceable by a court of competent jurisdiction, the remainder of the agreement
+      would still have full force and effect.
+      </p>
+
+    <h3>11. ENTIRE AGREEMENT</h3>
+
+    <p>This SUV (SPORT UTILITY VEHICLE) Rental Agreement constitutes the entire agreement between the Parties with respect to
+      this rental arrangement. No modification to this agreement can be made unless in writing signed by both Parties. Any notice
+      required to be given to the other party will be made to the contact information below.</p>
+
+
+    <p class="mb-5" style="color: #ee3036;font-weight: 600;">DATE AND TIME OF VEHICLE PICKUP:</p>
+
+
+    <table>
+      <tr>
+        <td>
+
+    <table>
+      <tr>
+        <td>
+          <b style="font-size:14px;">Windshields</b>
+
+          <table style="text-align: left;font-size: 11px;line-height: normal;">
+            <tr>
+              <th style="text-align: left;">Front</th>
+              <td>Chipped, Cracked</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Rear</th>
+              <td>Chipped</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Passenger Left Side 1</th>
+              <td>Chipped, Cracked</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Passenger Left Side 2</th>
+              <td>Chipped, Cracked, Scratches</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Passenger Right Side 1</th>
+              <td>Chipped, Cracked</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Passenger Right Side 2</th>
+              <td>Chipped, Cracked</td>
+            </tr>
+          </table>
+
+        </td>
+
+        <td style="text-align: center;vertical-align: top;">
+          <img src="https://rentsuv.com/frontend/img/carTop.png" width="100%" style="max-width: 240px;" /><br/>
+          <b>Top Damage</b>
+          <p style="margin-top:0;font-size: 11px;line-height: normal;">Dings, Scratches, Dents, Paints Chip</p>
+        </td>
+      </tr>
+    </table>
+
+    <table style="width: 100%;">
+      <tr>
+        <td>
+          <b style="font-size:14px;color:#ee3036">Tires Damages</b>
+
+          <table style="text-align: left;font-size: 11px;line-height: normal;">
+            <tr>
+              <th style="text-align: left;">Right Side Tire 1 Damage</th>
+              <td>Flat Spots, Wear</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Right Side Tire 2 Damage</th>
+              <td>Flat Spots, Wear</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Left Side Tire 1 Damage</th>
+              <td>Flat Spots, Wear</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Left Side Tire 2 Damage</th>
+              <td>Flat Spots, Wear</td>
+            </tr>
+          </table>
+        </td>
+
+        <td>
+          <b style="font-size:14px;color: #278856;">Rims Damages</b>
+
+          <table style="text-align: left;font-size: 11px;line-height: normal;">
+            <tr>
+              <th style="text-align: left;">Right Side Tire 1 Damage</th>
+              <td>Bent, Scratches</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Right Side Tire 2 Damage</th>
+              <td>Bent, Scratches</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Left Side Tire 1 Damage</th>
+              <td>Bent, Scratches</td>
+            </tr>
+
+            <tr>
+              <th style="text-align: left;">Left Side Tire 2 Damage</th>
+              <td>Bent, Scratches</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table style="width: 100%;">
+      <tr>
+        <td style="text-align: center;">
+          <img src="https://rentsuv.com/frontend/img/carFront.png" width="100%" style="max-width: 290px;"  />
+          <br/>
+          <b>Front Damage</b>
+          <p style="margin-top:0;font-size: 11px;line-height: normal;">Dings, Scratches, Dents, Paints Chip</p>
+        </td>
+
+        <td style="text-align: center;">
+          <img src="https://rentsuv.com/frontend/img/carSide.png" width="100%"  />
+          <b>Side A Damage</b>
+          <p style="margin-top:0;font-size: 11px;line-height: normal;">Dings, Scratches, Dents, Paints Chip</p>
+        </td>
+      </tr>
+    </table>
+
+    <table style="width: 100%;">
+      <tr>
+        <td style="text-align: center;">
+          <img src="https://rentsuv.com/frontend/img/carRear.png" width="100%" style="max-width: 290px;" />
+          <br/>
+          <b>Rear Damage</b>
+          <p style="margin-top:0;font-size: 11px;line-height: normal;">Dings, Scratches, Dents, Paints Chip</p>
+        </td>
+
+        <td style="text-align: center;">
+          <img src="https://rentsuv.com/frontend/img/carSideb.png" width="100%"  />
+          <b>Side B Damage</b>
+          <p style="margin-top:0;font-size: 11px;line-height: normal;">Dings, Scratches, Dents, Paints Chip</p>
+        </td>
+      </tr>
+    </table>
+
+    </td>
+
+    <td style="vertical-align: top;">
+
+      <div style="padding: 8px;background-color: #4472c4;text-align: center;color: #fff;width: 200px;margin: auto;margin-bottom: 10px;font-size: 12px;line-height: 18px;">
+        <b>Our Agent Has Pre-Check for
+          Vehicle Damages</b><br/>
+          <b>see the vehicle inspection chart</b><br/>
+          It is demanded that you check for any
+          damages to the rental vehicle before
+          leaving the pick-up location
+      </div>
+
+      <?php if(isset($customer_signature)) { ?>
+      <div style="border: 1px solid #000;width:200px;margin: auto;margin-bottom: 20px;font-size: 12px;">
+        <div style="background-color: #ddd;
+        padding: 8px;font-weight: 600; border-bottom: 1px solid #000;line-height: normal;">Agent Remarks</div>
+
+        <div style="background-color: #ddd;
+        padding: 8px;font-weight: 600;">
+        <img src="{{ asset('upload/'.$customer_signature) }}" style="width:170px" />  
+      </div>
+      </div>
+
+      <?php } ?>
+    </td>
+</tr>
+</table>
+
+
+    <h3 style="color:#9a0031;">Any Damages Please Inform Agent</h3>
+    
+
+    <div colspan="3" style="padding: 4px 4px;
+      background-color: #92d050;
+      font-weight: 500;
+      text-align: center;">The Parties agree to the terms and conditions set forth above as demonstrated by their signatures as follows:</div>
+  
+  <table style="text-align: left;width: 100%;">
+    <tr>
+      <td>
+        RRR SUV RENTAL RESERVATION TEAM<br/>
+        <img src="https://rentsuv.com/web_car_rents/public/upload/sign.jpg" style="width:170px" /><br/>
+        Approved by RRR SUV RANTAL CEO
+      </td>
+
+      <td style="text-align: right;vertical-align: top;">
+        {{ $first_name ?? '' }} {{ $last_name ?? ''}}<br/>
+        Renter Signature
+      </td>
+
+
+    </tr>
+  </table>
+    
+
+  </section>
+  
+  
+</body>
+</html>
